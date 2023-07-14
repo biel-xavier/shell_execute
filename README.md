@@ -10,17 +10,17 @@ quando configurado o Webhook de alguma sala do Discord no .env
 
 
 
-##Configuração do .env
+## Configuração do .env
 
-###BASE_URL
+### BASE_URL
 O Base URL por padrão utilizo como https://discord.com/api
 
-###WEBHOOK
+### WEBHOOK
 Nesse parâmentro utilize o Webhook da sala do Discord onde deseja receber as notificações.
 Ex.:
  - /webhooks/.../.....
 
-###COMMANDS
+### COMMANDS
 No COMMANDS devemos inserir um array de objetos, onde cada objeto deve conter:
  - content: Nome de identificação do comando (para notificação do Discord)
  - command: Comando a ser executado no CMD
@@ -31,7 +31,7 @@ Ex.:
 COMMANDS= [{"content": "node", "command": "node --version", "weekDay": [1, 2, 3, 4, 5, 6, 7]}, {"content": "ipconfig", "command": "ipconfig", "weekDay": [ 3 ]} ]
 ``` 
 
-###DEBUG
+### DEBUG
 No DEBUG espera-se um boolean para indicar se deve ou não enviar notificações via DISCORD.
 Ex.:
 ```
